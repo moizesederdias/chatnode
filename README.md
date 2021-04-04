@@ -1,1 +1,1 @@
-# chatnode
+# chatnode, desenvolvido em NodeJS
