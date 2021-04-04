@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="page" id="loginPage">
+        <h1>Qual seu nome?</h1>
+        <input type="text" id="loginNameInput" />
+    </div>
+
+    <div class="page" id="chatPage">
+        <div class="chatArea">
+            <ul class="chatList">
+                <li class="m-status">Fulano entrou na sala</li>
+                <li class="m-txt"><span>Fulano </span>Opa, tudo bem?</li>
+                <li class="m-txt"><span class="me">Moizes </span>tudo bem!</li>
+            </ul>
+            <ul class="userList"></ul>
+        </div>
+        <div class="chatInput">
+            <input type="text" id="chatTextInput" placeholder="Digite uma mensagem (e aperte ENTER)" /> 
+        </div>
+    </div>
+    <script src="/socket.io.js"></script>
+       <!-- ./node_modules/socket.io/client-dist/ -->
+    <script src="/main.js"></script>
+</body>
+</html>
+
